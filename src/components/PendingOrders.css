@@ -1,0 +1,32 @@
+.pending {
+  padding: 1em;
+}
+
+.pending h1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pending > .pending__container > .pending__status {
+  display: flex;
+  height: 59px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px 1px rgba(120, 137, 147, 0.16);
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 1em;
+  align-items: center;
+  padding: 1em;
+}
+
+.pending > .pending__container > .pending__status > .section {
+  flex: 1;
+}
+
+.pending > .pending__container > .pending__status > .section > h4 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #788993;
+}

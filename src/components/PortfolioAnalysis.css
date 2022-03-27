@@ -1,0 +1,204 @@
+.holdings {
+  padding: 1em;
+}
+
+.holdings h1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.holdings > .holdings__container > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.holdings > .holdings__container > .header > p {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  gap: 5px;
+  width: 85px;
+  height: 25px;
+  background: #eeeeee;
+  border-radius: 5px;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.holdings > .holdings__container > .header > .options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 35px;
+  width: 77px;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px 1px rgba(120, 137, 147, 0.16);
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.holdings > .holdings__container > .header > .options > label {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.holdings
+  > .holdings__container
+  > .header
+  > .options
+  > label
+  > input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.holdings
+  > .holdings__container
+  > .header
+  > .options
+  > label
+  > input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.holdings > .holdings__container > .nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+
+.holdings > .holdings__container > .nav__buttons > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 26px;
+  background: #ffffff;
+  border: 1px solid #afb5b8;
+  border-radius: 120px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #505050;
+  padding: 0 1em;
+}
+
+.holdings > .holdings__container > .nav__buttons > button.active {
+  background: #e07938;
+  color: #fafafa;
+  border: none;
+}
+
+.holdings > .holdings__container > .stock__table {
+  height: 250px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px 1px rgba(120, 137, 147, 0.16);
+  border-radius: 7px;
+  margin-top: 1em;
+}
+
+.holdings > .holdings__container > .stock__table > .table__header {
+  border-bottom: 0.5px solid #afb5b8;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.holdings > .holdings__container > .stock__table > .table__header > h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.holdings > .holdings__container > .stock__table > .table__header > p {
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 10px;
+  color: #505050;
+}
+
+.holdings > .holdings__container > .stock__table > .table__body > .row {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 10px;
+}
+
+.holdings > .holdings__container > .stock__table > .table__body > .row > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.holdings
+  > .holdings__container
+  > .stock__table
+  > .table__body
+  > .row
+  > p:first-child {
+  flex: 1;
+}
+
+.holdings
+  > .holdings__container
+  > .stock__table
+  > .table__body
+  > .row
+  > .meter {
+  width: 40px;
+  height: 10px;
+  background: #eeeeee;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.holdings
+  > .holdings__container
+  > .stock__table
+  > .table__body
+  > .row
+  > .meter
+  > .range {
+  width: 50%;
+  height: 10px;
+  background: #e07938;
+}

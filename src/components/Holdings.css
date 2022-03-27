@@ -1,0 +1,165 @@
+.holdings {
+  padding: 1em;
+}
+
+.holdings h1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.holdings > .holdings__container > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.holdings > .holdings__container > .header > p {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  gap: 5px;
+  width: 75px;
+  height: 25px;
+  background: #eeeeee;
+  border-radius: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.holdings > .holdings__container > .header > .options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 35px;
+  width: 77px;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px 1px rgba(120, 137, 147, 0.16);
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.holdings > .holdings__container > .header > .options > label {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.holdings
+  > .holdings__container
+  > .header
+  > .options
+  > label
+  > input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.holdings
+  > .holdings__container
+  > .header
+  > .options
+  > label
+  > input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.holdings > .holdings__container > .nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+
+.holdings > .holdings__container > .nav__buttons > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 26px;
+  background: #ffffff;
+  border: 1px solid #afb5b8;
+  border-radius: 120px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #505050;
+  padding: 0 1em;
+}
+
+.holdings > .holdings__container > .nav__buttons > button.active {
+  background: #e07938;
+  color: #fafafa;
+  border: none;
+}
+
+.holdings > .holdings__container > .card__list {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.holdings > .holdings__container > .show__more__holdings {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.holdings > .holdings__container > .show__more__holdings > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #788993;
+}
+
+.holdings > .holdings__container > .show__more__holdings > button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #788993;
+  height: 25px;
+  padding: 0 1em;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 35px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ec6917;
+}
